@@ -1,0 +1,540 @@
+/* Font */
+@font-face {
+	font-family: BebasNeue;
+	src: url(../font/BebasNeue-Regular.woff) format('woff');
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Style Utama */
+body {
+	background-image: url(../../img/subtle_white_feathers.png);
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+
+.wrap {
+	width: 1020px;
+	margin: 10px auto;
+}
+
+
+#check,
+#ryan,
+#cancel,
+.menu2 {
+	top: -500px;
+	left: -500px;
+	position: fixed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav.menu ul {
+	overflow: hidden;
+	color: #fff;
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #1abc9c;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+	box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+}
+
+nav.menu ul li {
+	margin: 0;
+	float: left;
+}
+
+nav.menu ul a {
+	padding: 15px;
+	display: block;
+	font-weight: 600;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	text-decoration: none;
+}
+
+nav.menu ul li:nth-child(1) a {
+	background: #16a085;
+}
+
+
+nav.menu ul a:hover {
+	text-decoration: none;
+	background: #16a085;
+}
+
+/*css untuk menu hover dropdown*/
+nav.menu ul li:hover .sub1 {
+	display: block
+}
+
+nav.menu ul li a:active {
+	transform: translateY(20px);
+}
+
+nav.menu ul .sub1 {
+	padding: 0;
+	display: none;
+	position: absolute;
+	background-color: #16a085;
+	/*Tua*/
+	width: auto;
+}
+
+nav.menu ul .sub1 a:hover {
+	text-decoration: none;
+	font-style: oblique;
+	background: #1abc9c;
+	/*Muda*/
+}
+
+/*akhir dropdown */
+
+.blog {
+	float: left;
+}
+
+.content {
+	width: 990px;
+	padding: 15px;
+	margin: 0 0 0px auto;
+	background: #fff;
+	border: 1px solid #dedede;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.35);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.35);
+	box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.35);
+}
+
+.content h1 {
+	text-align: center;
+}
+
+.content p {
+	text-align: justify;
+}
+
+.blog .content ol li a {
+	text-decoration: none;
+	background-color: none;
+	color: black;
+	font-weight: bold;
+}
+
+.content ol li a:hover {
+	color: blue;
+}
+
+
+
+
+#teksjalan {
+	background-image: linear-gradient(#16a085, white, #16a085);
+	color: black;
+	font-weight: bold;
+	width: 100%;
+	height: 27px;
+	line-height: 27px;
+	margin-top: 17px;
+
+}
+
+.hubungi {
+	display: inline-block;
+	width: 100%;
+	margin-top: -5px;
+	margin-bottom: -10px;
+	padding-bottom: 15px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	background-color: #1abc9c;
+}
+
+#kontak {
+	padding-left: 15px;
+}
+
+.ig,
+.yt,
+.wa,
+.fb,
+.tw {
+	padding-left: 10px;
+}
+
+.scroll_up {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+
+.scroll_up a {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+.scroll_up :active {
+	transform: translateY(10px);
+
+}
+
+
+
+
+footer {
+	display: inline-block;
+	width: 100%;
+	color: white;
+	background-color: #12806a;
+	text-align: center;
+	text-decoration: none;
+	bottom: 0px;
+}
+
+
+
+@media all and (max-width: 960px) {
+
+	header {
+		text-align: center;
+		margin-top: 10px;
+
+	}
+
+	.wrap {
+		width: 90%;
+		margin: 15px auto;
+	}
+
+	nav.menu ul {
+		width: 100%;
+		float: inherit;
+		margin-top: 0;
+		margin-bottom: 25px;
+
+	}
+
+	nav.menu ul li {
+		float: inherit;
+		margin: 0;
+	}
+
+	nav.menu ul a {
+		padding: 10px 0px 10px 15px;
+		display: block;
+		font-size: 16px;
+		border-top: 1px solid #1abf9f;
+		border-bottom: 1px solid #16a085;
+	}
+
+	nav.menu ul .sub1 {
+		padding: 0;
+		display: none;
+		position: absolute;
+		background-color: #16a085;
+		width: 20%;
+	}
+
+
+
+	.blog {
+		width: 90%;
+	}
+
+	.content {
+		float: inherit;
+		margin: 0 auto 25px;
+		width: 101%;
+		border: 1px solid #dedede;
+		padding: 5%;
+		background: #fff;
+	}
+
+	.hubungi {
+		width: 100%;
+	}
+
+	.ig,
+	.yt,
+	.wa,
+	.fb,
+	.tw {
+		padding-left: 10px;
+	}
+
+
+	footer {
+		display: inline-block;
+		width: 100%;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+	}
+
+
+
+}
+
+
+
+
+
+@media all and (max-width: 460px) {
+
+	header {
+		text-align: center;
+		margin-top: 10px;
+
+	}
+
+	.wrap {
+		width: 90%;
+		margin: 15px auto;
+	}
+
+
+	#check {
+		display: none;
+	}
+
+	label #ryan,
+	label #cancel {
+		position: fixed;
+		background: none;
+		border-radius: 3px;
+		cursor: pointer;
+		user-select: none;
+
+	}
+
+	label #ryan {
+		left: 5px;
+		top: 46px;
+		transition: all .5s;
+	}
+
+	label #cancel {
+		font-weight: bolder;
+		color: white;
+		text-decoration: none;
+		background-color: red;
+		line-height: 27px;
+		border-radius: 50%;
+		border: 2px solid rgb(180, 0, 0);
+		width: 30px;
+		height: 30px;
+		top: 3px;
+		right: 50%;
+		z-index: 3;
+		left: -250px;
+		top: 25px;
+		text-align: center;
+		transition: all .5s ease;
+	}
+
+	#check:checked~.sidebar {
+		left: 0;
+	}
+
+	#check:checked~label #ryan {
+		left: -250px;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#check:checked~label #cancel {
+		left: 50px;
+	}
+
+
+	#check:checked~.menu2 {
+		left: 0;
+		transition: all .5s;
+	}
+
+
+
+	.menu2 {
+		position: fixed;
+		z-index: 2;
+		left: -250px;
+		top: 65px;
+		opacity: 1;
+		line-height: 8px;
+		transition: all .5s;
+	}
+
+	.menu2 header {
+		font-size: 20px;
+		color: white;
+		line-height: 40px;
+		text-align: center;
+		background: #063146;
+		user-select: none;
+
+	}
+
+	.menu2 ul {
+		overflow: hidden;
+		list-style: none;
+		background: #042331;
+		-webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+		-moz-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+		box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+		margin: 0;
+		padding: 0 0 0 10px;
+	}
+
+
+	.menu2 ul li a {
+		display: block;
+		font-size: 13px;
+		text-decoration: none;
+		display: inline-block;
+		width: 40px;
+		padding: 15px;
+		color: white;
+		text-decoration: none;
+		transition: .5s;
+	}
+
+	.menu2 ul li:nth-child(2) a {
+		background: #063146;
+	}
+
+
+	.menu2 ul a:hover {
+		text-decoration: none;
+		background: #063146;
+	}
+
+	.menu2 ul li a:active {
+		transform: translateY(20px);
+	}
+
+
+	/*css untuk menu hover dropdown*/
+	.menu2 ul li:hover #sub2 {
+		display: inline-block;
+		width: 100px;
+	}
+
+	.menu2 ul #sub2 {
+		padding: 0;
+		display: none;
+		position: absolute;
+		background-color: #063146;
+		/*Tua*/
+		width: 100px;
+
+	}
+
+	.menu2 ul #sub2 a:hover {
+		left: 50%;
+		text-decoration: none;
+		font-style: oblique;
+		background: #042331;
+		width: 100px;
+		/*Muda*/
+	}
+
+
+	nav {
+		display: none;
+	}
+
+	.content {
+		margin: 10px auto;
+		font-size: small;
+		line-height: 15px;
+	}
+
+
+	.hubungi {
+		width: 100%;
+
+	}
+
+	.ig,
+	.yt,
+	.wa,
+	.fb,
+	.tw {
+		padding-left: 10px;
+	}
+
+	footer {
+		display: inline-block;
+		width: 100%;
+		color: white;
+		text-align: center;
+		font-size: small;
+		text-decoration: none;
+	}
+
+
+
+}
